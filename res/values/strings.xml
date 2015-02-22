@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GoodFellows</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="added_photos">added</string>
+    <string name="profile_name">Name</string>
+    <string name="post_tags">#Tags....</string>
+    <string name="post_status">post status....</string>
+    <string name="post_location">At Islamabad....</string>
+    <string name="dummy">10</string>
+    <string name="write_some_thing">Write status....</string>
+    <string name="attach_tags">Attach Your Tags</string>	
+    <string name="post_as_problem">Post as a Problem</string>
+    <string name="post">Post</string>
+    
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="register_title">Register</string>
+    <string name="login_title">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="followings">Followings</string>
+    <string name="followers">Followers</string>
+    <string name="silver_points">Silver</string>
+    <string name="gold_points">Gold</string>
+    <string name="dob">Date of Birth:</string>
+    <string name="profession">Profession</string>
+    <string name="marital_status">Marital Status:</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="twitter">Twitter:</string>
+    <string name="facebook">Facebook:</string>
+    <string name="edit">Edit</string>
+    <string name="set_current_as_default">Set Current Location As Default</string>
+    <string name="location">Location</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="single">Single</string>
+    <string name="married">Married</string>
+    <string name="add_images">Post Images</string>
+    
+    
+    
+    <color name="post_status_color">#888088</color>
+
+</resources>

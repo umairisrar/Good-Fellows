@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        
+        android:id="@+id/rlProfileImage"
+        android:layout_width="match_parent"
+        android:layout_height="130dp" android:background="@drawable/menu_background">
+        
+        <Button
+            android:id="@+id/btVPProfileImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/profile_pics" />
+
+        <TextView
+            android:id="@+id/tvVPProfileName"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/btVPProfileImage"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/btVPProfileImage"
+            android:text="@string/profile_name" />
+
+        <TextView
+            android:id="@+id/tvVPLocation"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btVPProfileImage"
+            android:layout_alignLeft="@+id/tvVPProfileName"
+            android:text="@string/post_location" />
+
+        <Button
+            android:id="@+id/btVPEdit"
+            android:layout_width="40dip"
+            android:layout_height="30dip"
+            android:layout_alignBaseline="@+id/tvVPProfileName"
+            android:layout_alignBottom="@+id/tvVPProfileName"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:text="@string/edit"
+            android:background="@drawable/edit_text_background" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFollowersPoints"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlProfileImage"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/tvVPFollowers"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="66dp"
+            android:layout_marginTop="22dp"
+            android:clickable="true"
+            android:text="@string/followers" />
+
+        <TextView
+            android:id="@+id/tvVPFollowings"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPFollowers"
+            android:layout_alignBottom="@+id/tvVPFollowers"
+            android:layout_marginLeft="107dp"
+            android:layout_toRightOf="@+id/tvVPFollowers"
+            android:clickable="true"
+            android:text="@string/followings" />
+
+        <Button
+            android:id="@+id/VPGoldPoints"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignRight="@+id/tvVPFollowers"
+            android:layout_below="@+id/tvVPFollowers"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/gold_points" />
+
+        <TextView
+            android:id="@+id/tvVPGoldPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/VPGoldPoints"
+            android:layout_alignBottom="@+id/VPGoldPoints"
+            android:layout_toLeftOf="@+id/tvVPFollowings"
+            android:text="@string/gold_points" />
+
+        <Button
+            android:id="@+id/btVPSilverPoints"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignBaseline="@+id/tvVPGoldPoints"
+            android:layout_alignBottom="@+id/tvVPGoldPoints"
+            android:layout_marginLeft="46dp"
+            android:layout_toRightOf="@+id/VPGoldPoints"
+            android:background="@drawable/silver_points" />
+
+        <TextView
+            android:id="@+id/tvVPSilverPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btVPSilverPoints"
+            android:layout_alignBottom="@+id/btVPSilverPoints"
+            android:layout_alignLeft="@+id/tvVPFollowings"
+            android:text="@string/silver_points" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlPersonalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlFollowersPoints"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/tvVPProfessionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPProfession"
+            android:layout_alignBottom="@+id/tvVPProfession"
+            android:layout_alignLeft="@+id/tvVPDOBInfo"
+            android:text="@string/profession" />
+
+        <TextView
+            android:id="@+id/tvVPDOB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPDOBInfo"
+            android:layout_alignBottom="@+id/tvVPDOBInfo"
+            android:layout_alignLeft="@+id/tvVPProfession"
+            android:text="@string/dob" />
+
+        <TextView
+            android:id="@+id/tvVPDOBInfo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="56dp"
+            android:text="@string/dob" />
+
+        <TextView
+            android:id="@+id/tvVPProfession"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvVPDOB"
+            android:layout_marginLeft="41dp"
+            android:text="@string/profession" />
+
+        <TextView
+            android:id="@+id/tnVPMaritalStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvVPProfession"
+            android:layout_below="@+id/tvVPProfession"
+            android:text="@string/marital_status" />
+
+        <TextView
+            android:id="@+id/tvVPMaritalStatusInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tnVPMaritalStatus"
+            android:layout_alignBottom="@+id/tnVPMaritalStatus"
+            android:layout_alignLeft="@+id/tvVPProfessionInfo"
+            android:text="@string/marital_status" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlSocialInformation"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlPersonalInformation"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/tvVPEmailInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPEmail"
+            android:layout_alignBottom="@+id/tvVPEmail"
+            android:layout_alignLeft="@+id/tvVPPhoneNumberInfo"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/tvVPPhoneNumber"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPPhoneNumberInfo"
+            android:layout_alignBottom="@+id/tvVPPhoneNumberInfo"
+            android:layout_alignLeft="@+id/tvVPEmail"
+            android:text="@string/phone_number" />
+
+        <TextView
+            android:id="@+id/tvVPPhoneNumberInfo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="56dp"
+            android:text="@string/phone_number" />
+
+        <TextView
+            android:id="@+id/tvVPEmail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvVPPhoneNumber"
+            android:layout_marginLeft="41dp"
+            android:text="@string/email" />
+
+        <TextView
+            android:id="@+id/tvVPFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvVPEmail"
+            android:layout_below="@+id/tvVPEmail"
+            android:text="@string/facebook" />
+
+        <TextView
+            android:id="@+id/tvVPFacebookInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPFacebook"
+            android:layout_alignBottom="@+id/tvVPFacebook"
+            android:layout_alignLeft="@+id/tvVPEmailInfo"
+            android:text="@string/facebook" />
+
+        <TextView
+            android:id="@+id/tvVPTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvVPFacebook"
+            android:layout_below="@+id/tvVPFacebook"
+            android:text="@string/twitter" />
+
+        <TextView
+            android:id="@+id/tvVPTwitterInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvVPFacebookInfo"
+            android:layout_centerVertical="true"
+            android:text="@string/twitter" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

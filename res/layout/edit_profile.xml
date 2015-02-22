@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:id="@+id/rlEProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background" >
+        
+        <Button
+            android:id="@+id/btEProfileImage"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/profile_pics" />
+
+        <Button
+            android:id="@+id/btEChangePic"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btEProfileImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/edit" />
+        
+        </RelativeLayout>
+        
+	<RelativeLayout
+        android:id="@+id/rlEPersonalInformation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlEProfilePic"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background" >
+
+        <TextView
+            android:id="@+id/tvVPProfessionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPProfession"
+            android:layout_alignBottom="@+id/tvVPProfession"
+            android:layout_alignLeft="@+id/tvVPDOBInfo"
+            android:text="@string/profession" />
+
+        <TextView
+            android:id="@+id/tvVPDOB"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvVPDOBInfo"
+            android:layout_alignBottom="@+id/tvVPDOBInfo"
+            android:layout_alignLeft="@+id/tvVPProfession"
+            android:text="@string/dob" />
+
+        <TextView
+            android:id="@+id/tvVPDOBInfo"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="56dp"
+            android:text="@string/dob" />
+
+        <TextView
+            android:id="@+id/tvVPProfession"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvVPDOB"
+            android:layout_marginLeft="41dp"
+            android:text="@string/profession" />
+
+        <TextView
+            android:id="@+id/tnVPMaritalStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvVPProfession"
+            android:layout_below="@+id/tvVPProfession"
+            android:text="@string/marital_status" />
+
+        <TextView
+            android:id="@+id/tvVPMaritalStatusInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tnVPMaritalStatus"
+            android:layout_alignBottom="@+id/tnVPMaritalStatus"
+            android:layout_alignLeft="@+id/tvVPProfessionInfo"
+            android:text="@string/marital_status" />
+
+    </RelativeLayout>
+    
+	<RelativeLayout
+        android:id="@+id/rlEPersonalLocation"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rlEPersonalInformation"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background" >
+
+        <Button
+            android:id="@+id/btESetLocation"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/map_location" />
+
+        <TextView
+            android:id="@+id/tvESetLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btESetLocation"
+            android:layout_centerHorizontal="true"
+            android:text="@string/set_current_as_default" />
+        
+        </RelativeLayout>
+    
+</RelativeLayout>

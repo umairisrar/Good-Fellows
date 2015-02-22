@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutPostDesc"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btPostPics"
+        android:background="@drawable/nfpp_background" >
+
+        <TextView
+            android:id="@+id/tvPostStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#5AC6B4"
+            android:text="@string/post_status" />
+
+        <TextView
+            android:id="@+id/tvPostDefaultLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPostStatus"
+            android:layout_below="@+id/tvPostStatus"
+            android:textColor="#5AC6B4"
+            android:text="@string/post_location" />
+
+        <Button
+            android:id="@+id/btPostTypeTag"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+             />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAddedPhotosNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btNFPPProfilePic"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/tvPostTags"
+        android:text="@string/added_photos" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayoutPostDesc" >
+
+        <Button
+            android:id="@+id/btPostLocation"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBaseline="@+id/btCommentOnPost"
+            android:layout_alignBottom="@+id/btCommentOnPost"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/location" />
+
+        <TextView
+            android:id="@+id/tvLikePost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btLikePost"
+            android:layout_alignBottom="@+id/btLikePost"
+            android:layout_toRightOf="@+id/btLikePost"
+            android:layout_centerVertical="true"
+            android:text="@string/dummy" />
+        
+        <Button
+            android:id="@+id/btSpamPost"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/tvLikePost"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/tvLikePost"
+            android:layout_centerVertical="true"
+            android:background="@drawable/spam" />
+
+        <Button
+            android:id="@+id/btLikePost"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:background="@drawable/like" />
+
+        <TextView
+            android:id="@+id/tvSpamPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btSpamPost"
+            android:text="@string/dummy" />
+
+        <Button
+            android:id="@+id/btSharePost"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignTop="@+id/tvSpamPost"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/share_post" />
+
+        <TextView
+            android:id="@+id/tvCommentOnPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btSpamPost"
+            android:layout_alignBottom="@+id/btSpamPost"
+            android:layout_marginRight="28dp"
+            android:layout_toLeftOf="@+id/btPostLocation"
+            android:layout_centerVertical="true"
+            android:text="@string/dummy" />
+
+        <Button
+            android:id="@+id/btCommentOnPost"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBaseline="@+id/btSharePost"
+            android:layout_alignBottom="@+id/btSharePost"
+            android:layout_toLeftOf="@+id/tvCommentOnPost"
+            android:background="@drawable/comment_on_post" />
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btNFPPProfilePic"
+        android:layout_width="70dip"
+        android:layout_height="70dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/profile_name" />
+
+    <TextView
+        android:id="@+id/tvProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btNFPPProfilePic"
+        android:layout_alignBottom="@+id/btNFPPProfilePic"
+        android:layout_toRightOf="@+id/btNFPPProfilePic"
+        android:text="@string/profile_name" />
+
+    <Button
+        android:id="@+id/btPostPics"
+        android:layout_width="250dip"
+        android:layout_height="100dip"
+        android:layout_below="@+id/btNFPPProfilePic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/profile_pic_m" />
+
+    <TextView
+        android:id="@+id/tvPostTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btNFPPProfilePic"
+        android:layout_alignLeft="@+id/tvProfileName"
+        android:text="@string/post_tags" />
+
+</RelativeLayout>
